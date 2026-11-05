@@ -1,11 +1,26 @@
 package agh.po.lab3;
 
+import java.util.Map;
+import java.util.HashMap;
 public class CodingBat {
     public static void main(String[] args) {
         CodingBat test = new CodingBat();
+
+        Map<String,String>map = new HashMap<>();
+
+        map.put("a", "aaa");
+        map.put("c", "cake");
+        System.out.println(test.mapAB3(map));
+
+
+
+
+
+
+
         System.out.print(test.icyHot(200, 200));
-        test.monkeyTrouble(true, true);
-        test.front22("aaa");
+        //test.monkeyTrouble(true, true);
+        //test.front22("aaa");
 
 
     }
@@ -41,7 +56,19 @@ public class CodingBat {
 
 
     }
+    public Map<String, String>mapAB3(Map<String, String> map) {
+        if (map.containsKey("a") && !map.containsKey("b")) {
+            map.put("b", map.get("a"));
+        } else if (!map.containsKey("a") && map.containsKey("b")) {
+            map.put("a", map.get("b"));
 
+        }
+        return map;
+
+    }
+    //public Map<String, Boolean>wordMultiple(String[] strings) {
+    //    for (int i=0; i <
+    //}
 
 
 }
