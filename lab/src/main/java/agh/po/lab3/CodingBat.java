@@ -11,6 +11,9 @@ public class CodingBat {
         map.put("a", "aaa");
         map.put("c", "cake");
         System.out.println(test.mapAB3(map));
+        System.out.println(test.wordMultiple(
+                new String[]{"kot", "pies", "kot"}
+        ));
 
 
 
@@ -18,7 +21,7 @@ public class CodingBat {
 
 
 
-        System.out.print(test.icyHot(200, 200));
+        //System.out.print(test.icyHot(200, 200));
         //test.monkeyTrouble(true, true);
         //test.front22("aaa");
 
@@ -66,9 +69,19 @@ public class CodingBat {
         return map;
 
     }
-    //public Map<String, Boolean>wordMultiple(String[] strings) {
-    //    for (int i=0; i <
-    //}
+    public Map<String, Boolean>wordMultiple(String[] strings) {
+       Map<String, Boolean> mapa1 = new HashMap<>();
+
+       for (String i : strings) {
+           if (!mapa1.containsKey(i) ){
+               mapa1.put(i, false);
+           } else {
+               mapa1.put(i, true);
+           }
+
+       }
+       return mapa1;
+    }
 
 
 }
