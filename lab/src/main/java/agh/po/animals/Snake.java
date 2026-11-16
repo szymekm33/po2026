@@ -9,6 +9,10 @@ public class Snake extends Animal {
     public String getDescription() {
         return "Jestem wężem " + name;
     }
+    public void makeSound() {
+        System.out.println("ssssssssss");
+
+    }
 
 
 }
