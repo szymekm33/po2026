@@ -10,4 +10,9 @@ public class Position {
     public String getPosition() {
         return "Current position is: (" + x + "," + y + ")";
     }
+
+    public Position(double xx, double yy) {
+        x = xx;
+        y = yy;
+    }
 }
