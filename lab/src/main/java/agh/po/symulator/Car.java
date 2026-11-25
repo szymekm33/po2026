@@ -33,7 +33,7 @@ public class Car {
                engine = e;
                gearbox = g;
                clutch = c;
-               position = p;//
+               position = p;//asdf
     }
 
 
