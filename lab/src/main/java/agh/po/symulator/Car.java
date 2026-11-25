@@ -5,6 +5,7 @@ public class Car {
     String carID;
     String carModel;
     int vMax;
+    int cokolwiek;
 
     Engine engine;
     Gearbox gearbox; //można tworzyć niezależne obiekty z klasy Gearbox w polu o nazwie gearbox
