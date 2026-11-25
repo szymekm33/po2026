@@ -13,7 +13,7 @@ public class Gearbox extends Component{
             currentGear = currentGear -1;
         }
     }
-    public Gearbox(int count) {
+    public Gearbox(int count) {//
         if ( count > 0) {
             gearCount = count;
 

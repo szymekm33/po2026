@@ -11,7 +11,7 @@ public class Engine extends Component{
     public void stop() {
         engSpeed = 0;
     }
-    public Engine(int speed, String emodel) {
+    public Engine(int speed, String emodel) { //konstruktor silnika
         defengSpeed = speed;
         model = emodel;
     }

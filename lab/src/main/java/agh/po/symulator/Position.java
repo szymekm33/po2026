@@ -11,7 +11,7 @@ public class Position {
         return "Current position is: (" + x + "," + y + ")";
     }
 
-    public Position(double xx, double yy) {
+    public Position(double xx, double yy) {//
         x = xx;
         y = yy;
     }
