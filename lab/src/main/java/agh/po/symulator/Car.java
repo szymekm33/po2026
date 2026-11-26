@@ -53,9 +53,10 @@ public class Car {
         Car golf = new Car(tdi, skrzynia, niedzialajacadwumasa, pozycjagolfa);
         golf.turnOn();
         golf.gearbox.currentGear = 3;
-        golf.gearbox.gearUp();
+        //golf.gearbox.gearUp();
         golf.gearbox.gearDown();
         golf.clutch.press();
+        golf.position.move(10, 50);
 
         System.out.println(pozycjagolfa.getPosition());
         pozycjagolfa.updatePosition(90, 66.1);
